@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 
 :root {
     --Very-Dark-Magenta: hsl(300, 43%, 22%);
@@ -6,24 +6,83 @@
     --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
     --Light-Grayish-Magenta: hsl(300, 24%, 96%);
 
-    font-family: 'Spartan', sans-serif;
+    font-family: "Spartan", sans-serif;
     font-size: 15px;
     font-weight: 400;
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-/* Footer Section */
-.attribution {
-    font-size: 11px;
-    text-align: center;
+/* Hero Section */
+body {
+    background-image: 
+        url(./images/bg-pattern-top-desktop.svg),
+        url(./images/bg-pattern-bottom-desktop.svg);
+    background-position: 
+        top left,
+        bottom right; 
+    background-repeat: no-repeat;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
+#hero h1 {
+    color: var(--Very-Dark-Magenta);
+    font-size: 3em;
+}
+
+#hero p {
+    color: var(--Dark-Grayish-Magenta);
+}
+
+/* Reviews Section */
+#reviews div {
+    margin: 1em;
+    padding: 1em 2em;
+    width: 35%;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 5px;
+}
+
+#r2 {
+    margin-left: 100em;
+}
+
+#reviews li {
+    list-style: none;
+    display: inline;
+    margin-right: 0.4em;
+}
+
+#reviews div ul {
+    float: left;
+}
+
+#reviews div p {
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    margin-left: 10em;
+}
+
+/* Footer section */
+footer {
+    background-color: #000;
+}
+
+.attribution { 
+    font-size: 12px; 
+    text-align: center; 
+    padding: 1.8em;
+    margin: 0;
+    color: white;
+}
+
+.attribution a { 
+    color: hsl(228, 60%, 60%); 
+    text-decoration: none;
+    font-weight: 700;
 }
