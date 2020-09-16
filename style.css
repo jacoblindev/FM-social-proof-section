@@ -171,3 +171,76 @@ footer {
     text-decoration: none;
     font-weight: 700;
 }
+
+@media screen and (max-width: 375px) {
+    /* Hero Section */
+    body {
+        background-image: url(./images/bg-pattern-top-mobile.svg),
+            url(./images/bg-pattern-bottom-mobile.svg);
+    }
+
+    .container {
+        padding: 5em 1.3em 1em;
+        display: block;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+        margin: 1em;
+        text-align: center;
+    }
+
+    #hero p {
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    /* Reviews Section */
+    #reviews {
+        width: 100%;
+        display: block;
+        padding-left: 0;
+    }
+
+    #reviews div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #reviews li {
+        margin-right: 0;
+    }
+
+    #reviews div ul {
+        float: none;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    #reviews div p {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    /* Testimonies Section */
+    #testimonies {
+        display: block;
+        margin-top: 3em;
+        margin-bottom: 2em;
+    }
+
+    .card {
+        margin-right: 0;
+        height: auto;
+    }
+
+    .card p {
+        padding-top: 2em;
+        line-height: 1.6em;
+    }
+
+    #T2, #T3 {
+        margin-top: 2em;
+    }
+}
