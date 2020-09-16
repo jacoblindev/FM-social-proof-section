@@ -118,24 +118,25 @@ body {
     font-weight: 400;
 }
 
-#profile {
+.profile {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-#profile img {
+
+.profile img {
     border-radius: 50%;
     width: 16%;
     margin-right: 2em;
 }
 
-#profile h4 {
+.profile h4 {
     color: white;
     font-weight: 700;
     margin-bottom: 0.5em;
 }
 
-#profile h5 {
+.profile h5 {
     color: var(--Soft-Pink);
     font-weight: 500;
     /* margin-bottom: 0.5em; */
